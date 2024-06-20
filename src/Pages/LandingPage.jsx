@@ -43,31 +43,39 @@ const LandingPage = () => {
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
         <p>BUY $BUG</p>
       </div>
-
       <div>
         <Navbar />
       </div>
-
-      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+      <div
+        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        data-aos="fade-up"
+      >
         <div className="grid md:flex items-center justify-between gap-[12px]">
-          <img src={HeroImage} alt="" />
+          <img src={HeroImage} alt="" data-aos="fade-up" />
           <div className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full">
-            <img src={Logo} alt="" className="w-full object-fill" />
+            <img
+              src={Logo}
+              alt=""
+              className="w-full object-fill"
+              data-aos="fade-down"
+            />
           </div>
-          <img src={HeroImage2} alt="" />
+          <img src={HeroImage2} alt="" data-aos="fade-right" />
         </div>
       </div>
-
       <div
         className="my-[40px] place-items-center grid md:flex items-center justify-center gap-[37px]"
         id="buy"
+        data-aos="fade-up"
       >
-        <img src={Twitter} alt="" />
+        <img src={Twitter} alt="" data-aos="" />
         <img src={Buy} alt="" />
         <img src={Telegram} alt="" />
       </div>
-
-      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+      <div
+        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        data-aos="fade-up"
+      >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
           style={{ backgroundImage: backgroundImage }}
@@ -126,8 +134,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+      <div
+        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        data-aos="fade-up"
+      >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
           style={{ backgroundImage: backgroundImage }}
@@ -168,8 +178,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+      <div
+        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        data-aos="fade-up"
+      >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
           style={{ backgroundImage: backgroundImage }}
@@ -208,14 +220,16 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      <div className=" flex items-center justify-center my-[20px]">
+      <div
+        className=" flex items-center justify-center my-[20px]"
+        data-aos="fade-down"
+      >
         <img src={Buy} alt="" />
       </div>
-
       <div
         className=" font-Fjalla text-center my-[40px] max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
         id="disclaimer"
+        data-aos="fade-up"
       >
         <p className=" font-[400] text-[30px] md:text-[40px] text-[#FFB041]">
           DISCLAIMER
@@ -225,7 +239,6 @@ const LandingPage = () => {
           financial return. There is no formal team or roadmap
         </p>
       </div>
-
       {isVisible && (
         <button
           onClick={scrollToTop}
