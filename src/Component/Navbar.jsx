@@ -24,6 +24,13 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
+                  href="/"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
+                >
+                  Home
+                </a>
+                <a
                   href="#buy"
                   className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
                   onClick={closeMenu}
@@ -74,6 +81,13 @@ const Navbar = () => {
 
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 grid">
+          <a
+            href="/"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
+          >
+            Home
+          </a>
           <a
             href="#buy"
             className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"

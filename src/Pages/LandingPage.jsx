@@ -51,18 +51,33 @@ const LandingPage = () => {
         data-aos="fade-up"
       >
         <div className="grid md:flex items-center justify-between gap-[12px]">
-          <img src={HeroImage} alt="" data-aos="fade-up" />
-          <div className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full">
+          <img
+            src={HeroImage}
+            alt=""
+            data-aos="fade-up"
+            style={{ pointerEvents: "none" }}
+          />
+          <div
+            className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full animate-pulse"
+            style={{ pointerEvents: "none" }}
+          >
             <img
               src={Logo}
               alt=""
               className="w-full object-fill"
               data-aos="fade-down"
+              style={{ pointerEvents: "none" }}
             />
           </div>
-          <img src={HeroImage2} alt="" data-aos="fade-right" />
+          <img
+            src={HeroImage2}
+            alt=""
+            data-aos="fade-right"
+            style={{ pointerEvents: "none" }}
+          />
         </div>
       </div>
+
       <div
         className="my-[40px] place-items-center grid md:flex items-center justify-center gap-[37px]"
         id="buy"
@@ -78,7 +93,7 @@ const LandingPage = () => {
       >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage }}
+          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p
             className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white"
@@ -140,7 +155,7 @@ const LandingPage = () => {
       >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage }}
+          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
             LAUNCHCANICS
@@ -184,7 +199,7 @@ const LandingPage = () => {
       >
         <div
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage }}
+          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p
             className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white "
