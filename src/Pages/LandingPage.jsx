@@ -57,16 +57,23 @@ const LandingPage = () => {
             data-aos="fade-up"
             style={{ pointerEvents: "none" }}
           />
-          <div
-            className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full animate-pulse"
-            style={{ pointerEvents: "none" }}
-          >
-            <img
-              src={Logo}
-              alt=""
-              className="w-full object-fill"
-              data-aos="fade-down"
+          <div className="">
+            <div
+              className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full "
               style={{ pointerEvents: "none" }}
+            >
+              <img
+                src={Logo}
+                alt=""
+                className="w-full object-fill"
+                data-aos="fade-down"
+                style={{ pointerEvents: "none" }}
+              />
+            </div>
+            <img
+              src={Buy}
+              alt=""
+              className=" md:hidden my-[20px] h-[50px] mx-auto"
             />
           </div>
           <img
@@ -79,16 +86,16 @@ const LandingPage = () => {
       </div>
 
       <div
-        className="my-[40px] place-items-center grid md:flex items-center justify-center gap-[37px]"
+        className="my-[40px] place-items-center flex items-center justify-center gap-[37px]"
         id="buy"
         data-aos="fade-up"
       >
         <img src={Twitter} alt="" data-aos="" />
-        <img src={Buy} alt="" />
+        <img src={Buy} alt="" className=" hidden md:block" />
         <img src={Telegram} alt="" />
       </div>
       <div
-        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
         <div
@@ -107,50 +114,50 @@ const LandingPage = () => {
         </div>
 
         <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 1</p>
-            <li className=" text-[20px] text-white mt-[20px] text-left">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] ">
+            <p className=" text-[#FFB041] text-[25px]">STEP 1</p>
+            <li className=" text-[18px] text-white mt-[20px] text-left">
               Download TON Keeper wallet and set up.
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 2</p>
-            <li className=" text-left text-[20px] text-white mt-[20px]">
+            <p className=" text-[#FFB041] text-[25px]">STEP 2</p>
+            <li className=" text-left text-[18px] text-white mt-[20px]">
               Fund TON Keeper Wallet with TON from a CEX like MEXC (if Meme is
               required, ensure to input it)
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 3</p>
-            <li className="text-left text-[20px] text-white mt-[20px]">
+            <p className="text-[25px] text-[#FFB041]">STEP 3</p>
+            <li className="text-left text-[18px] text-white mt-[20px]">
               Once wallet is funded, tap on the in-app browser.
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 4</p>
-            <li className=" text-left text-[20px] text-white mt-[20px]">
+            <p className=" text-[25px] text-[#FFB041]">STEP 4</p>
+            <li className=" text-left text-[18px] text-white mt-[20px]">
               Input the DEX url ston.fi
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 5</p>
-            <li className=" text-left text-[20px] text-white mt-[20px]">
+            <p className="text-[25px] text-[#FFB041]">STEP 5</p>
+            <li className=" text-left text-[18px] text-white mt-[20px]">
               Connect your wallet
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[#FFB041]">STEP 6</p>
-            <li className=" text-[20px] text-white text-left my-[20px]">
-              Then get the contract address and paste on select BUG beneath.
+            <p className="text-[25px] text-[#FFB041]">STEP 6</p>
+            <li className=" text-[18px] text-white text-left my-[20px]">
+              Then get the contract address and paste on select $BUG beneath.
             </li>
-            <li className=" text-left text-[20px] text-white">
+            <li className=" text-left text-[18px] text-white">
               Proceed to swapping
             </li>
           </div>
         </div>
       </div>
       <div
-        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
         <div
@@ -194,7 +201,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div
-        className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
         <div
@@ -212,25 +219,25 @@ const LandingPage = () => {
           </p> */}
         </div>
 
-        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">43.433T $BUG</p>
           </div>
 
-          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Allocations</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Presale</p>
           </div>
-          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Taxes</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">0% BS</p>
           </div>
 
-          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white overflow-x-scroll">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white overflow-x-scroll">
             <p className="">0x4336Df9145009570975747295f2901</p>
           </div>
         </div>
@@ -239,7 +246,7 @@ const LandingPage = () => {
         className=" flex items-center justify-center my-[20px]"
         data-aos="fade-down"
       >
-        <img src={Buy} alt="" />
+        <img src={Buy} alt="" className=" h-[50px] md:h-full mx-auto" />
       </div>
       <div
         className=" font-Fjalla text-center my-[40px] max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"

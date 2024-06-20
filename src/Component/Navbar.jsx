@@ -17,10 +17,10 @@ const Navbar = () => {
     <div className="bg-[#79092A] md:bg-black text-white font-Fjalla mb-[20px] md:my-[45px] py-[20px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center">
-          <div className="flex items-center justify-center">
-            <div className="flex-shrink-0 md:hidden w-[60px] h-[60px] overflow-hidden">
+          <div className="flex items-center justify-between">
+            {/* <div className="flex-shrink-0 md:hidden w-[60px] h-[60px] overflow-hidden">
               <img src={Logo} alt="" className="object-fill w-full" />
-            </div>
+            </div> */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
@@ -68,12 +68,16 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
+          <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
+            <p className="  ">BUY $BUG</p>
+          </div>
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#FFB041] focus:outline-none focus:bg-[#FFB041] focus:text-white"
+              className="inline-flex items-center justify-center p-2 rounded-md "
             >
-              {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+              {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
             </button>
           </div>
         </div>
