@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/Favicon.png";
+// import Logo from "../assets/Favicon.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +70,9 @@ const Navbar = () => {
           </div>
 
           <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
-            <p className="  ">BUY $BUG</p>
+            <p className=" " id="">
+              BUY $BUG
+            </p>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button

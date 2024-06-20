@@ -73,7 +73,7 @@ const LandingPage = () => {
             <img
               src={Buy}
               alt=""
-              className=" md:hidden my-[20px] h-[50px] mx-auto"
+              className=" md:hidden my-[20px] h-[60px] mx-auto"
             />
           </div>
           <img
@@ -90,9 +90,9 @@ const LandingPage = () => {
         id="buy"
         data-aos="fade-up"
       >
-        <img src={Twitter} alt="" data-aos="" />
+        <img src={Twitter} alt="" data-aos="" className=" animate-bounce" />
         <img src={Buy} alt="" className=" hidden md:block" />
-        <img src={Telegram} alt="" />
+        <img src={Telegram} alt="" className=" animate-bounce" />
       </div>
       <div
         className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
