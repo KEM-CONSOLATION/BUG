@@ -9,49 +9,52 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="bg-[#79092A] md:bg-black text-white font-Fjalla mb-[20px] md:my-[45px] py-[20px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center">
           <div className="flex items-center justify-center">
             <div className="flex-shrink-0 md:hidden w-[60px] h-[60px] overflow-hidden">
-              <img src={Logo} alt="" className=" object-fill w-full" />
+              <img src={Logo} alt="" className="object-fill w-full" />
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400] "
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black  px-3 py-2 rounded-md text-[26px] font-[400] "
+                  href="#buy"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
                 >
                   BUY$BUG
                 </a>
                 <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400] "
+                  href="#tokenomics"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
                 >
                   TOKENOMICS
                 </a>
                 <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400] "
+                  href="#how"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
                 >
                   HOW TO BUY
                 </a>
                 <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400] "
+                  href="#ecosystem"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
                 >
                   ECOSYSTEM
                 </a>
                 <a
-                  href="#"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400] "
+                  href="#disclaimer"
+                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  onClick={closeMenu}
                 >
                   DISCLAIMER
                 </a>
@@ -72,32 +75,37 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 grid">
           <a
-            href="#"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base "
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base "
+            href="#buy"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
           >
             BUY$BUG
           </a>
           <a
-            href="#"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base "
+            href="#tokenomics"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
           >
             TOKENOMICS
           </a>
           <a
-            href="#"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base "
+            href="#how"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
           >
             HOW TO BUY
           </a>
           <a
-            href="#"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base "
+            href="#ecosystem"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
+          >
+            ECOSYSTEM
+          </a>
+          <a
+            href="#disclaimer"
+            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            onClick={closeMenu}
           >
             DISCLAIMER
           </a>

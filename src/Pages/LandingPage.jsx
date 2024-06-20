@@ -5,11 +5,38 @@ import HeroImage2 from "../assets/HeroImage2.png";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import Buy from "../assets/Buy.png";
-import How from "../assets/HeaderImage.png"; // Assuming this is your background image
+import How from "../assets/HeaderImage.png";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
+import { useEffect, useState } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LandingPage = () => {
-  const backgroundImage = `url(${How})`; // Use template literal correctly
+  const backgroundImage = `url(${How})`;
+  const [isVisible, setIsVisible] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
   return (
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
@@ -31,7 +58,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="my-[40px] place-items-center grid md:flex items-center justify-center gap-[37px]">
+      <div
+        className="my-[40px] place-items-center grid md:flex items-center justify-center gap-[37px]"
+        id="buy"
+      >
         <img src={Twitter} alt="" />
         <img src={Buy} alt="" />
         <img src={Telegram} alt="" />
@@ -42,7 +72,10 @@ const LandingPage = () => {
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
           style={{ backgroundImage: backgroundImage }}
         >
-          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
+          <p
+            className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white"
+            id="how"
+          >
             HOW TO BUY $BUG INU
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
@@ -53,7 +86,7 @@ const LandingPage = () => {
         <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className=" text-[#FFB041]">STEP 1</p>
-            <li className=" text-[20px] text-white mt-[20px]">
+            <li className=" text-[20px] text-white mt-[20px] text-left">
               Download TON Keeper wallet and set up.
             </li>
           </div>
@@ -93,6 +126,114 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+
+      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+        <div
+          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
+          style={{ backgroundImage: backgroundImage }}
+        >
+          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
+            LAUNCHCANICS
+          </p>
+          <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
+            LAUNCH MECHANICS
+          </p>
+        </div>
+
+        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Max Supply:</p>
+            <p className=" text-[20px] ">43,433,4333,433,4333</p>
+          </div>
+
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Total Supply:</p>
+            <p className=" text-[20px] ">43,433,4333,433,4333 </p>
+          </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Circulating Supply:</p>
+            <p className=" text-[20px] ">
+              (43,433,4333,433,4333) with a 43 days.
+            </p>
+          </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Contract Revoked / Renonced</p>
+          </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Anti-Bot: for the first 4h 33m of launch</p>
+          </div>
+
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">Anti-Whate: {"<"}4.3% first 4d33m post-launch</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto">
+        <div
+          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
+          style={{ backgroundImage: backgroundImage }}
+        >
+          <p
+            className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white "
+            id="tokenomics"
+          >
+            TOKENOMICS
+          </p>
+          {/* <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
+            LAUNCH MECHANICS
+          </p> */}
+        </div>
+
+        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">43.433T $BUG</p>
+          </div>
+
+          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">0% Allocations</p>
+          </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">0% Presale</p>
+          </div>
+          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">0% Taxes</p>
+          </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+            <p className="">0% BS</p>
+          </div>
+
+          <div className=" bg-[#FFB041] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white overflow-x-scroll">
+            <p className="">0x4336Df9145009570975747295f2901</p>
+          </div>
+        </div>
+      </div>
+
+      <div className=" flex items-center justify-center my-[20px]">
+        <img src={Buy} alt="" />
+      </div>
+
+      <div
+        className=" font-Fjalla text-center my-[40px] max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
+        id="disclaimer"
+      >
+        <p className=" font-[400] text-[30px] md:text-[40px] text-[#FFB041]">
+          DISCLAIMER
+        </p>
+        <p className=" font-[600] text-[25px] text-white font-Inter">
+          $Bug is a community coin with no intrinsic value or expectations of
+          financial return. There is no formal team or roadmap
+        </p>
+      </div>
+
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-4 right-4 bg-[#FFB041] text-[#000000] px-4 py-4 rounded-full shadow-lg hover:bg-[#47240E] hover:text-white transition-all duration-300 animate-bounce hover:animate-none"
+        >
+          <RiArrowUpDoubleLine className="text-2xl" />
+        </button>
+      )}
     </div>
   );
 };
