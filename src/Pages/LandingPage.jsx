@@ -13,6 +13,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const LandingPage = () => {
+  const [copied, setCopied] = useState(false);
+  const textToCopy =
+    "1A1ZP1EP5QGEFI2ENJWENFNJFJWHEKDHUI2GQUIG2IQHHHJKSKDQKHDGKQGGQDJWDLMV7DIVFNA";
+
+  const handleCopy = () => {
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        setCopied(true);
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   const backgroundImage = `url(${How})`;
   const [isVisible, setIsVisible] = useState(false);
 
@@ -37,6 +52,17 @@ const LandingPage = () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
+
+  useEffect(() => {
+    if (copied) {
+      const timer = setTimeout(() => {
+        setCopied(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [copied]);
+
   return (
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
@@ -117,41 +143,24 @@ const LandingPage = () => {
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] ">
             <p className=" text-[#FFB041] text-[25px]">STEP 1</p>
             <li className=" text-[18px] text-white mt-[20px] text-left">
-              Download TON Keeper wallet and set up.
+              Download and Set up a base compatible crypto wallet e.g Coinbase,
+              Trust Wallet, MetaMask
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className=" text-[#FFB041] text-[25px]">STEP 2</p>
             <li className=" text-left text-[18px] text-white mt-[20px]">
-              Fund TON Keeper Wallet with TON from a CEX like MEXC (if Meme is
-              required, ensure to input it)
+              Transfer Ethereum (ETH) on base directly to your Base network
+              wallet or Bridge Ethereum Mainnet tokens (ETH) to base via Orbiter
+              Finance bridge.
             </li>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className="text-[25px] text-[#FFB041]">STEP 3</p>
             <li className="text-left text-[18px] text-white mt-[20px]">
-              Once wallet is funded, tap on the in-app browser.
-            </li>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className=" text-[25px] text-[#FFB041]">STEP 4</p>
-            <li className=" text-left text-[18px] text-white mt-[20px]">
-              Input the DEX url ston.fi
-            </li>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className="text-[25px] text-[#FFB041]">STEP 5</p>
-            <li className=" text-left text-[18px] text-white mt-[20px]">
-              Connect your wallet
-            </li>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
-            <p className="text-[25px] text-[#FFB041]">STEP 6</p>
-            <li className=" text-[18px] text-white text-left my-[20px]">
-              Then get the contract address and paste on select $BUG beneath.
-            </li>
-            <li className=" text-left text-[18px] text-white">
-              Proceed to swapping
+              Visit Matcha, an onchain liquidity swap aggregator that allows you
+              to trade supported Base currencies. Ensure your wallet is
+              connected to the Base network.
             </li>
           </div>
         </div>
@@ -189,15 +198,42 @@ const LandingPage = () => {
             </p>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
-            <p className="">Contract Revoked / Renonced</p>
+            <p className="">Contract Revoked / Renounced</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
-            <p className="">Anti-Bot: for the first 4h 33m of launch</p>
-          </div>
+        </div>
+      </div>
 
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
-            <p className="">Anti-Whate: {"<"}4.3% first 4d33m post-launch</p>
-          </div>
+      <div
+        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
+        data-aos="fade-up"
+      >
+        <div
+          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
+          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
+        >
+          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
+            $BUG INU
+          </p>
+          <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
+            CONTRACT ADDRESS
+          </p>
+        </div>
+
+        <div className="text-center font-[600] font-Inter text-white">
+          <p className="mb-[20px] text-[20px] lowercase animate-bounce">
+            {textToCopy}
+          </p>
+          <p
+            className="bg-[#79092A] px-[26px] inline rounded-[10px] py-[10px] text-[20px] cursor-pointer"
+            onClick={handleCopy}
+          >
+            Copy
+          </p>
+
+          <p className=" font-[400] text-[14px] mt-[30px] italic">
+            {" "}
+            {copied && "Text has been Copied to clipboard"}
+          </p>
         </div>
       </div>
       <div
@@ -236,10 +272,6 @@ const LandingPage = () => {
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
             <p className="">0% BS</p>
           </div>
-
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white overflow-x-scroll">
-            <p className="">0x4336Df9145009570975747295f2901</p>
-          </div>
         </div>
       </div>
       <div
@@ -258,7 +290,8 @@ const LandingPage = () => {
         </p>
         <p className=" font-[600] text-[25px] text-white font-Inter">
           $Bug is a community coin with no intrinsic value or expectations of
-          financial return. There is no formal team or roadmap
+          financial return. There is no formal team or roadmap. The coin is
+          Useless.
         </p>
       </div>
       {isVisible && (

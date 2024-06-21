@@ -18,11 +18,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center">
           <div className="flex items-center justify-between">
-            {/* <div className="flex-shrink-0 md:hidden w-[60px] h-[60px] overflow-hidden">
-              <img src={Logo} alt="" className="object-fill w-full" />
-            </div> */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+            <div className="hidden md:block ">
+              <div className=" flex items-center ">
                 <a
                   href="/"
                   className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
@@ -51,13 +48,7 @@ const Navbar = () => {
                 >
                   HOW TO BUY
                 </a>
-                <a
-                  href="#ecosystem"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
-                  onClick={closeMenu}
-                >
-                  ECOSYSTEM
-                </a>
+
                 <a
                   href="#disclaimer"
                   className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
@@ -115,13 +106,7 @@ const Navbar = () => {
           >
             HOW TO BUY
           </a>
-          <a
-            href="#ecosystem"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
-            onClick={closeMenu}
-          >
-            ECOSYSTEM
-          </a>
+
           <a
             href="#disclaimer"
             className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
