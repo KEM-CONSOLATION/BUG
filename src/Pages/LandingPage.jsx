@@ -76,7 +76,7 @@ const LandingPage = () => {
         className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
-        <div className="grid md:flex items-center justify-between gap-[12px]">
+        <div className="grid place-items-center md:flex items-center md:justify-between gap-[12px]">
           <img
             src={HeroImage}
             alt=""
@@ -139,7 +139,7 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
+        <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] ">
             <p className=" text-[#FFB041] text-[25px]">STEP 1</p>
             <li className=" text-[18px] text-white mt-[20px] text-left">
@@ -181,23 +181,23 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+        <div className=" font-Fjalla grid place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Max Supply:</p>
             <p className=" text-[20px] ">43,433,4333,433,4333</p>
           </div>
 
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Total Supply:</p>
             <p className=" text-[20px] ">43,433,4333,433,4333 </p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Circulating Supply:</p>
             <p className=" text-[20px] ">
               (43,433,4333,433,4333) with a 43 days.
             </p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Contract Revoked / Renounced</p>
           </div>
         </div>
@@ -219,8 +219,8 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className="text-center font-[600] font-Inter text-white">
-          <p className="mb-[20px] text-[20px] lowercase animate-bounce">
+        <div className="text-center font-[600] font-Inter text-white ">
+          <p className="mb-[20px] text-[20px] lowercase animate-bounce min-w-[300px] overflow-auto">
             {textToCopy}
           </p>
           <p
@@ -255,21 +255,21 @@ const LandingPage = () => {
           </p> */}
         </div>
 
-        <div className=" font-Fjalla grid md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+        <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">43.433T $BUG</p>
           </div>
 
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Allocations</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Presale</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Taxes</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% BS</p>
           </div>
         </div>
