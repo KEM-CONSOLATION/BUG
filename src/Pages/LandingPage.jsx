@@ -82,6 +82,7 @@ const LandingPage = () => {
             alt=""
             data-aos="fade-up"
             style={{ pointerEvents: "none" }}
+            className=" max-w-[400] h-full w-full object-cover"
           />
           <div className="">
             <div
@@ -107,6 +108,7 @@ const LandingPage = () => {
             alt=""
             data-aos="fade-right"
             style={{ pointerEvents: "none" }}
+            className=" max-w-[400] h-full w-full object-cover"
           />
         </div>
       </div>
@@ -257,7 +259,7 @@ const LandingPage = () => {
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">43.433T $BUG</p>
+            <p className="">433B $BUG</p>
           </div>
 
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
