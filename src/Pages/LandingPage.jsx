@@ -165,6 +165,14 @@ const LandingPage = () => {
               connected to the Base network.
             </li>
           </div>
+          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
+            <p className="text-[25px] text-[#FFB041]">STEP 4</p>
+            <li className="text-left text-[18px] text-white mt-[20px]">
+              Start trading on Base using your connected wallet. Explore
+              available tokens and monitor market conditions for optimal trading
+              opportunities.
+            </li>
+          </div>
         </div>
       </div>
       <div
@@ -176,7 +184,7 @@ const LandingPage = () => {
           style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
-            LAUNCHCANICS
+            Launch Configuration
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
             LAUNCH MECHANICS
@@ -195,9 +203,7 @@ const LandingPage = () => {
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Circulating Supply:</p>
-            <p className=" text-[20px] ">
-              (43,433,4333,433,4333) with a 43 days.
-            </p>
+            <p className=" text-[20px] ">433,433,433,433</p>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Contract Revoked / Renounced</p>
