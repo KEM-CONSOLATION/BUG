@@ -123,11 +123,11 @@ const LandingPage = () => {
         <img src={Telegram} alt="" className=" animate-bounce" />
       </div>
       <div
-        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
+        className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto hidden"
         data-aos="fade-up"
       >
         <div
-          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
+          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px] "
           style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p
@@ -137,7 +137,8 @@ const LandingPage = () => {
             HOW TO BUY $BUG INU
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
-            ON A DECENTRALIZED EXCHANGE
+            using STon.fi on the TON blockchain:
+            {/* ON A DECENTRALIZED EXCHANGE */}
           </p>
         </div>
 
@@ -224,6 +225,10 @@ const LandingPage = () => {
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
             CONTRACT ADDRESS
+          </p>
+
+          <p className=" text-[14px] lg:text-[16px] font-semibold text-[#ffffff] font-Inter">
+            Deployed on SUI NETWORK
           </p>
         </div>
 

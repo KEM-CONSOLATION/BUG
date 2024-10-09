@@ -43,7 +43,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="#how"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
+                  className="hidden hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
                   onClick={closeMenu}
                 >
                   HOW TO BUY
@@ -101,7 +101,7 @@ const Navbar = () => {
           </a>
           <a
             href="#how"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
+            className="hidden hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
             onClick={closeMenu}
           >
             HOW TO BUY
