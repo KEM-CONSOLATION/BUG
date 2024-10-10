@@ -82,7 +82,7 @@ const LandingPage = () => {
             alt=""
             data-aos="fade-up"
             style={{ pointerEvents: "none" }}
-            className=" max-w-[400] h-full w-full object-cover"
+            className=" max-w-[400px] h-full w-full object-cover"
           />
           <div className="">
             <div
@@ -108,7 +108,7 @@ const LandingPage = () => {
             alt=""
             data-aos="fade-right"
             style={{ pointerEvents: "none" }}
-            className=" max-w-[400] h-full w-full object-cover"
+            className=" max-w-[400px] h-full w-full object-cover"
           />
         </div>
       </div>
