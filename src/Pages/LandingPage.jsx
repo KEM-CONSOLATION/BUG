@@ -118,9 +118,13 @@ const LandingPage = () => {
         id="buy"
         data-aos="fade-up"
       >
-        <img src={Twitter} alt="" data-aos="" className=" animate-bounce" />
+        <a href="https://x.com/Buginu_Sui" target="blank">
+          <img src={Twitter} alt="" data-aos="" className=" animate-bounce" />
+        </a>
         <img src={Buy} alt="" className=" hidden md:block" />
-        <img src={Telegram} alt="" className=" animate-bounce" />
+        <a href="https://t.me/+AuBp0doMMCk2NWE0" target="blank">
+          <img src={Telegram} alt="" className=" animate-bounce" />
+        </a>
       </div>
       <div
         className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto hidden"
@@ -204,7 +208,7 @@ const LandingPage = () => {
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Circulating Supply:</p>
-            <p className=" text-[20px] ">433,433,433,433</p>
+            <p className=" text-[20px] ">1,000,000,000</p>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Contract Revoked / Renounced</p>
