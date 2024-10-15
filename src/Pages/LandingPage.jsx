@@ -66,7 +66,7 @@ const LandingPage = () => {
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
-        <p>BUY $BUG INU</p>
+        <p>$BUG INU</p>
       </div>
       <div>
         <Navbar />
