@@ -4,7 +4,6 @@ import HeroImage from "../assets/HeroImage.png";
 import HeroImage2 from "../assets/HeroImage2.png";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
-import Buy from "../assets/Buy.png";
 import How from "../assets/HeaderImage.png";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
@@ -67,7 +66,7 @@ const LandingPage = () => {
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
-        <p>BUY $BUG</p>
+        <p>BUY $BUG INU</p>
       </div>
       <div>
         <Navbar />
@@ -97,11 +96,6 @@ const LandingPage = () => {
                 style={{ pointerEvents: "none" }}
               />
             </div>
-            <img
-              src={Buy}
-              alt=""
-              className=" md:hidden my-[20px] h-[60px] mx-auto"
-            />
           </div>
           <img
             src={HeroImage2}
@@ -121,7 +115,7 @@ const LandingPage = () => {
         <a href="https://x.com/Buginu_Sui" target="blank">
           <img src={Twitter} alt="" data-aos="" className=" animate-bounce" />
         </a>
-        <img src={Buy} alt="" className=" hidden md:block" />
+
         <a href="https://t.me/+AuBp0doMMCk2NWE0" target="blank">
           <img src={Telegram} alt="" className=" animate-bounce" />
         </a>
@@ -199,12 +193,12 @@ const LandingPage = () => {
         <div className=" font-Fjalla grid place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Max Supply:</p>
-            <p className=" text-[20px] ">43,433,4333,433,4333</p>
+            <p className=" text-[20px] ">1,000,000,000</p>
           </div>
 
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Total Supply:</p>
-            <p className=" text-[20px] ">43,433,4333,433,4333 </p>
+            <p className=" text-[20px] ">1,000,000,000 </p>
           </div>
           <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Circulating Supply:</p>
@@ -274,7 +268,7 @@ const LandingPage = () => {
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">433B $BUG</p>
+            <p className="">433B $BUG INU</p>
           </div>
 
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
@@ -291,12 +285,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div
-        className=" flex items-center justify-center my-[20px]"
-        data-aos="fade-down"
-      >
-        <img src={Buy} alt="" className=" h-[50px] md:h-full mx-auto" />
-      </div>
+
       <div
         className=" font-Fjalla text-center my-[40px] max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
         id="disclaimer"
@@ -306,8 +295,8 @@ const LandingPage = () => {
           DISCLAIMER
         </p>
         <p className=" font-[600] text-[25px] text-white font-Inter">
-          $Bug is a community coin with no intrinsic value or expectations of
-          financial return. There is no formal team or roadmap. The coin is
+          $BUG INU is a community coin with no intrinsic value or expectations
+          of financial return. There is no formal team or roadmap. The coin is
           Useless.
         </p>
       </div>

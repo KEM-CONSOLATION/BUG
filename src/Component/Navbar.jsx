@@ -27,13 +27,7 @@ const Navbar = () => {
                 >
                   Home
                 </a>
-                <a
-                  href="#buy"
-                  className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
-                  onClick={closeMenu}
-                >
-                  BUY$BUG
-                </a>
+
                 <a
                   href="#tokenomics"
                   className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
@@ -62,7 +56,7 @@ const Navbar = () => {
 
           <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
             <p className=" " id="">
-              BUY $BUG
+              $BUG INU
             </p>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -85,13 +79,7 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a
-            href="#buy"
-            className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
-            onClick={closeMenu}
-          >
-            BUY$BUG
-          </a>
+
           <a
             href="#tokenomics"
             className="hover:bg-[#FFB041] hover:text-black inline-block px-3 py-2 rounded-md text-base"
