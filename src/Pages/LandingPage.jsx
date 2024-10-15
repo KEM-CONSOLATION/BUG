@@ -268,7 +268,7 @@ const LandingPage = () => {
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">433B $BUGINU</p>
+            <p className="">1,000,000,000 $BUGINU</p>
           </div>
 
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
