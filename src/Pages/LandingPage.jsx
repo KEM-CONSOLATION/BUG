@@ -66,7 +66,7 @@ const LandingPage = () => {
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
-        <p>$BUG INU</p>
+        <p>$BUGINU</p>
       </div>
       <div>
         <Navbar />
@@ -132,7 +132,7 @@ const LandingPage = () => {
             className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white"
             id="how"
           >
-            HOW TO BUY $BUG INU
+            HOW TO BUY $BUGINU
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
             using STon.fi on the TON blockchain:
@@ -219,7 +219,7 @@ const LandingPage = () => {
           style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
-            $BUG INU
+            $BUGINU
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
             CONTRACT ADDRESS
@@ -268,7 +268,7 @@ const LandingPage = () => {
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">433B $BUG INU</p>
+            <p className="">433B $BUGINU</p>
           </div>
 
           <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
@@ -295,8 +295,8 @@ const LandingPage = () => {
           DISCLAIMER
         </p>
         <p className=" font-[600] text-[25px] text-white font-Inter">
-          $BUG INU is a community coin with no intrinsic value or expectations
-          of financial return. There is no formal team or roadmap. The coin is
+          $BUGINU is a community coin with no intrinsic value or expectations of
+          financial return. There is no formal team or roadmap. The coin is
           Useless.
         </p>
       </div>

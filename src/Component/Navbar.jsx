@@ -56,7 +56,7 @@ const Navbar = () => {
 
           <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
             <p className=" " id="">
-              $BUG INU
+              $BUGINU
             </p>
           </div>
           <div className="-mr-2 flex md:hidden">
