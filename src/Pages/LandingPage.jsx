@@ -5,6 +5,7 @@ import HeroImage2 from "../assets/HeroImage2.png";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import How from "../assets/HeaderImage.png";
+import Bestie from "../assets/bestie.jpeg";
 import { useEffect, useState } from "react";
 
 import AOS from "aos";
@@ -71,11 +72,11 @@ const LandingPage = () => {
           />
           <div className="">
             <div
-              className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full "
+              className="max-w-[450px] max-h-[450px] overflow-hidden rounded-full shadow-2xl"
               style={{ pointerEvents: "none" }}
             >
               <img
-                src={Logo}
+                src={Bestie}
                 alt=""
                 className="w-full object-fill"
                 data-aos="fade-down"
@@ -89,6 +90,19 @@ const LandingPage = () => {
             data-aos="fade-right"
             style={{ pointerEvents: "none" }}
             className=" max-w-[400px] h-full w-full object-cover"
+          />
+        </div>
+
+        <div
+          className="max-w-[450px] mx-auto max-h-[450px] overflow-hidden rounded-full shadow-2xl"
+          style={{ pointerEvents: "none" }}
+        >
+          <img
+            src={Logo}
+            alt=""
+            className="w-full object-fill"
+            data-aos="fade-down"
+            style={{ pointerEvents: "none" }}
           />
         </div>
       </div>
