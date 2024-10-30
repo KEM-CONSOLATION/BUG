@@ -25,7 +25,7 @@ const Navbar = () => {
                   className="hover:bg-[#FFB041] hover:text-black px-3 py-2 rounded-md text-[26px] font-[400]"
                   onClick={closeMenu}
                 >
-                  Home
+                  HOME
                 </a>
 
                 <a

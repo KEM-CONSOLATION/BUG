@@ -212,7 +212,7 @@ const LandingPage = () => {
           </p>
 
           <p className=" text-[14px] lg:text-[16px] font-semibold text-[#ffffff] font-Inter">
-            Deployed on SUI NETWORK
+            Deployed on SOLANA NETWORK
           </p>
         </div>
 
