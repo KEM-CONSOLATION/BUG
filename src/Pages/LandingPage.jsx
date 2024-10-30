@@ -5,7 +5,6 @@ import HeroImage2 from "../assets/HeroImage2.png";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import How from "../assets/HeaderImage.png";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 
 import AOS from "aos";
@@ -27,30 +26,14 @@ const LandingPage = () => {
       });
   };
 
-  const backgroundImage = `url(${How})`;
-  const [isVisible, setIsVisible] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 100) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
     AOS.init({
-      duration: 1000,
-      once: true,
+      duration: 3000,
+      once: false,
     });
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
   }, []);
+
+  const backgroundImage = `url(${How})`;
 
   useEffect(() => {
     if (copied) {
@@ -66,7 +49,10 @@ const LandingPage = () => {
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
-        <p>$BUGINU</p>
+        <p className="text-[#FFB041]">
+          BUG INU <span className=" text-white">IS</span> BONK{" "}
+          <span className=" text-white"> INU&apos;S BESTIE</span>
+        </p>
       </div>
       <div>
         <Navbar />
@@ -300,14 +286,6 @@ const LandingPage = () => {
           Useless.
         </p>
       </div>
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-[#FFB041] text-[#000000] px-4 py-4 rounded-full shadow-lg hover:bg-[#47240E] hover:text-white transition-all duration-300 animate-bounce hover:animate-none"
-        >
-          <RiArrowUpDoubleLine className="text-2xl" />
-        </button>
-      )}
     </div>
   );
 };
