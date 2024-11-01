@@ -5,7 +5,7 @@ import HeroImage2 from "../assets/HeroImage2.png";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import How from "../assets/HeaderImage.png";
-import Bestie from "../assets/bestie.jpeg";
+import Bestie from "../assets/bestie.png";
 import { useEffect, useState } from "react";
 
 import AOS from "aos";
@@ -49,7 +49,7 @@ const LandingPage = () => {
   return (
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
-      <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
+      <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#b71f20] py-[9px] text-center">
         <p className="text-[#FFB041]">
           BUG INU <span className=" text-white">IS</span> BONK{" "}
           <span className=" text-white"> INU&apos;S BESTIE</span>
@@ -141,14 +141,14 @@ const LandingPage = () => {
         </div>
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] ">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] ">
             <p className=" text-[#FFB041] text-[25px]">STEP 1</p>
             <li className=" text-[18px] text-white mt-[20px] text-left">
               Download and Set up a base compatible crypto wallet e.g Coinbase,
               Trust Wallet, MetaMask
             </li>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className=" text-[#FFB041] text-[25px]">STEP 2</p>
             <li className=" text-left text-[18px] text-white mt-[20px]">
               Transfer Ethereum (ETH) on base directly to your Base network
@@ -156,7 +156,7 @@ const LandingPage = () => {
               Finance bridge.
             </li>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className="text-[25px] text-[#FFB041]">STEP 3</p>
             <li className="text-left text-[18px] text-white mt-[20px]">
               Visit Matcha, an onchain liquidity swap aggregator that allows you
@@ -164,7 +164,7 @@ const LandingPage = () => {
               connected to the Base network.
             </li>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px]">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px]">
             <p className="text-[25px] text-[#FFB041]">STEP 4</p>
             <li className="text-left text-[18px] text-white mt-[20px]">
               Start trading on Base using your connected wallet. Explore
@@ -179,8 +179,8 @@ const LandingPage = () => {
         data-aos="fade-up"
       >
         <div
-          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
+          className="relative text-center my-[60px] bg-cover bg-no-repeat bg-[#b71f20] py-[25px]"
+          // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
             Launch Configuration
@@ -191,20 +191,16 @@ const LandingPage = () => {
         </div>
 
         <div className=" font-Fjalla grid place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Max Supply:</p>
             <p className=" text-[20px] ">1,000,000,000</p>
           </div>
 
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">Total Supply:</p>
-            <p className=" text-[20px] ">1,000,000,000 </p>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Circulating Supply:</p>
             <p className=" text-[20px] ">1,000,000,000</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Contract Revoked / Renounced</p>
           </div>
         </div>
@@ -215,8 +211,8 @@ const LandingPage = () => {
         data-aos="fade-up"
       >
         <div
-          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
+          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px] bg-[#b71f20]"
+          // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
             $BUGINU
@@ -231,11 +227,14 @@ const LandingPage = () => {
         </div>
 
         <div className="text-center font-[600] font-Inter text-white ">
-          <p className="mb-[20px] text-[20px] lowercase animate-bounce min-w-[300px] overflow-auto">
+          <p className="mb-[20px] text-[30px]  animate-bounce min-w-[300px] overflow-auto">
+            Coming Soon...
+          </p>
+          <p className="mb-[20px] text-[20px] lowercase animate-bounce min-w-[300px] overflow-auto hidden">
             {textToCopy}
           </p>
           <p
-            className="bg-[#79092A] px-[26px] inline rounded-[10px] py-[10px] text-[20px] cursor-pointer"
+            className="bg-[#b71f20] px-[26px] inline rounded-[10px] py-[10px] text-[20px] cursor-pointer hidden"
             onClick={handleCopy}
           >
             Copy
@@ -252,8 +251,8 @@ const LandingPage = () => {
         data-aos="fade-up"
       >
         <div
-          className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
-          style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
+          className="bg-[#b71f20] relative text-center my-[60px] bg-cover bg-no-repeat py-[25px]"
+          // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p
             className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white "
@@ -267,21 +266,15 @@ const LandingPage = () => {
         </div>
 
         <div className=" font-Fjalla grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-[10px] md:gap-[37px]">
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">1,000,000,000 $BUGINU</p>
           </div>
 
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">0% Allocations</p>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Presale</p>
           </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">0% Taxes</p>
-          </div>
-          <div className=" bg-[#79092A] px-[27px] py-[16px] md:py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">0% BS</p>
           </div>
         </div>
       </div>

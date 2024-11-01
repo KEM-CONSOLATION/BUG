@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#79092A] md:bg-black text-white font-Fjalla mb-[20px] md:my-[45px] py-[20px]">
+    <div className="bg-[#b71f20] md:bg-black text-white font-Fjalla mb-[20px] md:my-[45px] py-[20px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center">
           <div className="flex items-center justify-between">
@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#79092A] py-[9px] text-center">
+          <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#b71f20] py-[9px] text-center">
             <p className=" " id="">
               $BUGINU
             </p>
