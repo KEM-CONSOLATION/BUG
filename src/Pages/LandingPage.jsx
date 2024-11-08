@@ -178,30 +178,26 @@ const LandingPage = () => {
         className="max-w-6xl mx-[10px] 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
-        <div
-          className="relative text-center my-[60px] bg-cover bg-no-repeat bg-[#b71f20] py-[25px]"
-          // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
-        >
+        <div className="relative text-center my-[60px] bg-cover bg-no-repeat bg-[#b71f20] py-[25px]">
           <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-[#000000] ">
             Launch Configuration
-          </p>
-          <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
-            LAUNCH MECHANICS
           </p>
         </div>
 
         <div className=" font-Fjalla grid place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
           <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-[#000000]">
-            <p className="">Max Supply:</p>
+            <p className="text-[30px] text-[#000000] ">Max Supply:</p>
             <p className=" text-[20px] text-white">1,000,000,000</p>
           </div>
 
           <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-[#000000]">
-            <p className="">Circulating Supply:</p>
+            <p className="text-[30px]  text-[#000000]">Circulating Supply:</p>
             <p className=" text-[20px] text-white">1,000,000,000</p>
           </div>
           <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
-            <p className="">Contract Revoked / Renounced</p>
+            <p className="text-[30px] text-[#000000] ">
+              Contract Revoked / Renounced
+            </p>
           </div>
         </div>
       </div>
@@ -255,7 +251,7 @@ const LandingPage = () => {
           // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
           <p
-            className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white "
+            className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-[#000000] "
             id="tokenomics"
           >
             TOKENOMICS
