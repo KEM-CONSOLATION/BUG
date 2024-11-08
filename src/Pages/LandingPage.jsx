@@ -182,7 +182,7 @@ const LandingPage = () => {
           className="relative text-center my-[60px] bg-cover bg-no-repeat bg-[#b71f20] py-[25px]"
           // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
-          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
+          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-[#000000] ">
             Launch Configuration
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">
@@ -191,14 +191,14 @@ const LandingPage = () => {
         </div>
 
         <div className=" font-Fjalla grid place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-[37px]">
-          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-[#000000]">
             <p className="">Max Supply:</p>
-            <p className=" text-[20px] ">1,000,000,000</p>
+            <p className=" text-[20px] text-white">1,000,000,000</p>
           </div>
 
-          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
+          <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-[#000000]">
             <p className="">Circulating Supply:</p>
-            <p className=" text-[20px] ">1,000,000,000</p>
+            <p className=" text-[20px] text-white">1,000,000,000</p>
           </div>
           <div className=" bg-[#b71f20] px-[27px] py-[40px] text-center max-w-[395px] w-full text-[25px] font-[600] font-Inter text-white">
             <p className="">Contract Revoked / Renounced</p>
@@ -214,7 +214,7 @@ const LandingPage = () => {
           className="relative text-center my-[60px] bg-cover bg-no-repeat py-[25px] bg-[#b71f20]"
           // style={{ backgroundImage: backgroundImage, pointerEvents: "none" }}
         >
-          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-white ">
+          <p className=" font-Fjalla text-[30px] lg:text-[50px] font-[400] text-[#000000]">
             $BUGINU
           </p>
           <p className=" text-[18px] lg:text-[25px] font-semibold text-[#FFB041] font-Inter">

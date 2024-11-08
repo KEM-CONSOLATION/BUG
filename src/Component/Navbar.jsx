@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-white bg-[#b71f20] py-[9px] text-center">
+          <div className="font-Fjalla md:hidden  text-[50px] font-[400] text-[#000000] bg-[#b71f20] py-[9px] text-center">
             <p className=" " id="">
               $BUGINU
             </p>
