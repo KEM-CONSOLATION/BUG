@@ -50,9 +50,9 @@ const LandingPage = () => {
     <div className="font-Fjalla">
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#b71f20] py-[9px] text-center">
-        <p className="text-[#FFB041]">
-          BUG INU <span className=" text-white">IS</span> BONK{" "}
-          <span className=" text-white"> INU&apos;S BESTIE</span>
+        <p className="text-[#ffffff]">
+          I AM BUG INU, <span className=" text-[#FFB041]">DOGE&apos;s</span>{" "}
+          BEST FRIEND!
         </p>
       </div>
       <div>
@@ -112,11 +112,11 @@ const LandingPage = () => {
         id="buy"
         data-aos="fade-up"
       >
-        <a href="https://x.com/Buginu_Sui" target="blank">
+        <a href="https://x.com/Buginu_SOL" target="blank">
           <img src={Twitter} alt="" data-aos="" className=" animate-bounce" />
         </a>
 
-        <a href="https://t.me/+AuBp0doMMCk2NWE0" target="blank">
+        <a href="https://t.me/buginu_official" target="blank">
           <img src={Telegram} alt="" className=" animate-bounce" />
         </a>
       </div>
