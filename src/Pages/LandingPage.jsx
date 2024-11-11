@@ -51,8 +51,8 @@ const LandingPage = () => {
       <hr className="border-[15px] border-[#FFB041] hidden md:block" />
       <div className="hidden md:block font-Fjalla text-[60px] font-[400] text-white bg-[#b71f20] py-[9px] text-center">
         <p className="text-[#ffffff]">
-          I AM BUG INU, <span className=" text-[#FFB041]">DOGE&apos;s</span>{" "}
-          BEST FRIEND!
+          I AM <span className=" text-[#000000]">BUG INU</span>,{" "}
+          <span className=" text-[#FFB041]">DOGE&apos;s</span> BEST FRIEND!
         </p>
       </div>
       <div>
