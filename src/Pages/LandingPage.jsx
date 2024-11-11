@@ -62,7 +62,7 @@ const LandingPage = () => {
         className="max-w-6xl mx-10 2xl:max-w-7xl md:mx-auto"
         data-aos="fade-up"
       >
-        <div className="grid place-items-center md:flex items-center md:justify-between gap-[12px]">
+        <div className="grid place-items-center lg:flex items-center lg:justify-between gap-[12px]">
           <img
             src={HeroImage}
             alt=""
