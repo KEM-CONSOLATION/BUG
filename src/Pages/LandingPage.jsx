@@ -13,8 +13,7 @@ import "aos/dist/aos.css";
 
 const LandingPage = () => {
   const [copied, setCopied] = useState(false);
-  const textToCopy =
-    "1A1ZP1EP5QGEFI2ENJWENFNJFJWHEKDHUI2GQUIG2IQHHHJKSKDQKHDGKQGGQDJWDLMV7DIVFNA";
+  const textToCopy = "49UoyPNz5Qfr1HSfpTciuMexNK5E1nVhmaZhMJzpwbu5";
 
   const handleCopy = () => {
     navigator.clipboard
@@ -223,14 +222,14 @@ const LandingPage = () => {
         </div>
 
         <div className="text-center font-[600] font-Inter text-white ">
-          <p className="mb-[20px] text-[30px]  animate-bounce min-w-[300px] overflow-auto">
+          <p className="mb-[20px] text-[30px]  animate-bounce min-w-[300px] overflow-auto hidden">
             Coming Soon...
           </p>
-          <p className="mb-[20px] text-[20px] lowercase animate-bounce min-w-[300px] overflow-auto hidden">
+          <p className="mb-[20px] text-[20px] lowercase animate-bounce min-w-[300px] overflow-auto ">
             {textToCopy}
           </p>
           <p
-            className="bg-[#b71f20] px-[26px] inline rounded-[10px] py-[10px] text-[20px] cursor-pointer hidden"
+            className="bg-[#b71f20] px-[26px] inline rounded-[10px] py-[10px] text-[20px] cursor-pointer "
             onClick={handleCopy}
           >
             Copy
@@ -238,7 +237,7 @@ const LandingPage = () => {
 
           <p className=" font-[400] text-[14px] mt-[30px] italic">
             {" "}
-            {copied && "Text has been Copied to clipboard"}
+            {copied && "Address has been Copied to clipboard"}
           </p>
         </div>
       </div>
